@@ -9,8 +9,8 @@ Source `efficient_subtitles.sh` to your bash or zsh shell and use `sub_infer_and
 Provide the following positional parameters:
 
 ```bash
-> subs_analyze "video.mp4" "subtitles.ass" [overwrite_audio_samples=t] \
-  [start_minutes=6] [n_samples_per_sec=10] [intro_skip_seconds=0]
+> sub_infer_and_create "video.mp4" "subtitles.ass" [overwrite_audio_samples=t] \
+  [start_minutes=6] [intro_skip_seconds=0] [n_samples_per_sec=10]
 ```
 
 If an offset video file or subtitle file needs to be generated, the method will handle this. If none are needed, the method will simply call ffmpeg to combine the original video and audio files.
